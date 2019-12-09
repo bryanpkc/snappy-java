@@ -2,21 +2,21 @@ sudo: required
 
 matrix:
   include:
+#    - os: linux
+#      jdk: openjdk8
     - os: linux
-      jdk: openjdk7
-    - os: linux
-      jdk: jdk8
+      jdk: openjdk8
       arch: s390x
     - os: linux
       jdk: openjdk11
       arch: s390x
-    - os: linux
-      jdk: openjdk12
+#    - os: linux
+#      jdk: openjdk11
       
 services:
   - docker
 
-language: scala
+language: java
 
 scala:
   - 2.12.8
