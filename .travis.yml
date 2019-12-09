@@ -1,5 +1,8 @@
 sudo: required
 
+os: linux
+arch: s390x
+
 services:
   - docker
 
