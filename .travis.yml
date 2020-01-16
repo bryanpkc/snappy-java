@@ -1,22 +1,17 @@
 sudo: required
 
+language: scala
+
 matrix:
   include:
     - os: linux
-      jdk: openjdk8
-      language: scala
+      jdk: openjdk8      
     - os: linux
-      jdk: openjdk8
-      arch: s390x
-      language: java
+      jdk: openjdk11
     - os: linux
       jdk: openjdk11
       arch: s390x
       dist: bionic
-      language: scala
-    - os: linux
-      jdk: openjdk11
-      language: scala
       
 services:
   - docker
