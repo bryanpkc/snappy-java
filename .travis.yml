@@ -12,6 +12,7 @@ matrix:
     - os: linux
       jdk: openjdk11
       arch: s390x
+      dist: bionic
       language: scala
     - os: linux
       jdk: openjdk11
